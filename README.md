@@ -1,4 +1,4 @@
-# MCJac: model-constrained randomized Jacobian matching for chaotic dynamics
+# MCJac: Model-Constrained Randomized Jacobian Matching for Chaotic Dynamics
 
 ![MCJac highlight](assets/highlight.jpg)
 
@@ -9,11 +9,9 @@ first- versus second-order by column.*
 MCJac compares the Jacobians of the true and the learned vector field at randomly
 perturbed states. A Taylor expansion of that loss contains a Hessian-mismatch
 term, so it supplies second-order supervision using only Jacobian evaluations,
-without ever forming the full Hessian tensor. This folder is a self-contained
-reference implementation: the five supervision strategies of the paper side by
-side, the stored five-seed evaluation the manuscript's table is made from, and
-the scripts that draw the figures below.
+without ever forming the full Hessian tensor. 
 
+This repository provides a compact reference implementation of the five supervision strategies considered in the paper, together with a minimal Lorenz~63 demonstration and the stored evaluation arrays underlying the five-seed comparison reported in this paper. It is intended as a reference implementation of the proposed methodology rather than a complete reproduction package for all experiments in the paper.
 
 Companion code for
 
@@ -79,7 +77,7 @@ the 1,000 initial conditions and the training configurations. Because chaotic fl
 ```
 $ python3 -m venv .venv && . .venv/bin/activate
 $ pip install "jax[cuda12]" optax matplotlib                                                   
-$ python3 paper_fig1.py                         
+$ python3 naive_rollout_fig.py                         
 $ python3 train_l63.py --method mcjac           
 ```
 
@@ -95,7 +93,7 @@ NVIDIA RTX 4500 Ada was used under `Python` 3.12.3,
 
 - `losses.py` -- the five supervision objectives
 - `train_l63.py`, `l63.py` -- Lorenz 63 training and rollout demo
-- `paper_fig1.py`, `data/naive_m1.npz` -- Figure 1 from the released model
+- `naive_rollout_fig.py`, `data/naive_m1.npz` -- released naive model
 - `seed_table.py`, `data/onattr_*.npz` -- stored five-seed evaluation
 - `escape_fig.py`, `data/escape/` -- one rollout leaving the attractor
 - `LICENSE` --  MIT License
@@ -103,8 +101,9 @@ NVIDIA RTX 4500 Ada was used under `Python` 3.12.3,
 
 ## License and citation
 
-This code is released under the MIT License (LICENSE).
+This code is released under the MIT License; see LICENSE for details.
 
 Copyright © 2026 Shinhoo Kang.
 
-The method and accompanying paper are joint work with H. V. Nguyen and T. Bui-Thanh. If you use this work, please cite the paper for the method and the Zenodo archive for the reference implementation. Both records credit all three authors.
+The method and accompanying paper are joint work with H. V. Nguyen and T. Bui-Thanh. 
+If you use mcjac in scientific work, please cite the accompanying paper for the method and the Zenodo software record for this reference implementation.
