@@ -1,0 +1,15 @@
+{
+  "title": "Reference implementation for \"Second-order consistency for learning chaotic dynamics via randomized Jacobian matching\"",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {"name": "Kang, Shinhoo", "affiliation": "Korea University"},
+    {"name": "Nguyen, Hai Van.", "affiliation": "The University of Texas at Austin"},
+    {"name": "Bui-Thanh, Tan", "affiliation": "The University of Texas at Austin"}
+  ],
+  "related_identifiers": [
+    {"identifier": "10.48550/arXiv.2606.01596",
+     "relation": "isSupplementTo",
+     "scheme": "doi"}
+  ]
+}
