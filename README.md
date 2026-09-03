@@ -13,10 +13,10 @@ without ever forming the full Hessian tensor.
 
 This repository provides a compact reference implementation of the five supervision strategies considered in the paper, together with a minimal Lorenz~63 demonstration and the stored evaluation arrays underlying the five-seed comparison reported in this paper. It is intended as a reference implementation of the proposed methodology rather than a complete reproduction package for all experiments in the paper.
 
-Companion code for
+[![DOI](https://zenodo.org/badge/1355605393.svg)](https://doi.org/10.5281/zenodo.22283090)
+[![arXiv](https://img.shields.io/badge/arXiv-2606.01596-b31b1b.svg)](https://arxiv.org/abs/2606.01596)
 
-> S. Kang, H. V. Nguyen and T. Bui-Thanh, *Second-order consistency for learning
-> chaotic dynamics via randomized Jacobian matching,* Chaos (under review), 2026.
+
 
 ## Example
 
@@ -107,3 +107,11 @@ Copyright © 2026 Shinhoo Kang.
 
 The method and accompanying paper are joint work with H. V. Nguyen and T. Bui-Thanh. 
 If you use mcjac in scientific work, please cite the accompanying paper for the method and the Zenodo software record for this reference implementation.
+
+> S. Kang, H. V. Nguyen and T. Bui-Thanh, *Second-order consistency for learning
+> chaotic dynamics via randomized Jacobian matching,* Chaos (under review), 2026.
+> arXiv:2606.01596
+
+> S. Kang, *mcjac: model-constrained randomized Jacobian matching* (v0.1),
+> Zenodo, 2026. doi:10.5281/zenodo.22283090
+
