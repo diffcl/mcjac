@@ -91,7 +91,7 @@ NVIDIA RTX 4500 Ada was used under `Python` 3.12.3,
 - `paper_fig1.py`, `data/naive_m1.npz` -- Figure 1 from the released model
 - `seed_table.py`, `data/onattr_*.npz` -- stored five-seed evaluation
 - `escape_fig.py`, `data/escape/` -- one rollout leaving the attractor
-- `LICENSE` --  MIT License, matching the parent repository
+- `LICENSE` --  MIT License
 
 
 ## License and citation
