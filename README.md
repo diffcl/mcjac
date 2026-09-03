@@ -18,7 +18,7 @@ Companion code for
 `train_l63.py` trains all five objectives on Lorenz 63 and rolls each model out
 from one held-out on-attractor state. 
 
-![Five objectives at the demo settings](figure/demo_l63.png)
+![Five objectives at the demo settings](assets/demo_l63.png)
 
 `escape_fig.py` visualizes one stored failed rollout of `mc` at seed 36 in four
 windows across the transition. The trajectory first circulates on both lobes,
@@ -26,7 +26,7 @@ then leaves the physical attractor and becomes trapped in a small spurious
 region below it. This example illustrates why failure frequency is reported
 separately from accuracy on the physical attractor.
 
-![One rollout leaving the attractor](figure/demo_escape4.png)
+![One rollout leaving the attractor](assets/demo_escape4.png)
 
 ## What separates the methods: five seeds, not one rollout
 
