@@ -1,5 +1,11 @@
 # MCJac: model-constrained randomized Jacobian matching for chaotic dynamics
 
+![MCJac highlight](assets/highlight.jpg)
+
+*Learned Lorenz 63 attractors coloured by the Hessian norm $\|H(x)\|_F$ of the trained
+vector field: implicit (`mc`, `mcjac`) versus explicit (`jac`, `hes`) supervision by row,
+first- versus second-order by column.*
+
 MCJac compares the Jacobians of the true and the learned vector field at randomly
 perturbed states. A Taylor expansion of that loss contains a Hessian-mismatch
 term, so it supplies second-order supervision using only Jacobian evaluations,
@@ -7,6 +13,7 @@ without ever forming the full Hessian tensor. This folder is a self-contained
 reference implementation: the five supervision strategies of the paper side by
 side, the stored five-seed evaluation the manuscript's table is made from, and
 the scripts that draw the figures below.
+
 
 Companion code for
 
