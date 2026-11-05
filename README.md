@@ -109,8 +109,8 @@ The method and accompanying paper are joint work with H. V. Nguyen and T. Bui-Th
 If you use mcjac in scientific work, please cite the accompanying paper for the method and the Zenodo software record for this reference implementation.
 
 > S. Kang, H. V. Nguyen and T. Bui-Thanh, *Second-order consistency for learning
-> chaotic dynamics via randomized Jacobian matching,* Chaos (under review), 2026.
-> arXiv:2606.01596
+> chaotic dynamics via randomized Jacobian matching,* [Chaos](https://doi.org/10.1063/5.0347780), 2026.
+> 
 
 > S. Kang, *mcjac: model-constrained randomized Jacobian matching* (v0.1),
 > Zenodo, 2026. doi:10.5281/zenodo.22283090
